@@ -1,0 +1,24 @@
+h1 {color: pink; 
+	text-align: left; 
+	text-shadow: 2px 2px 5px blue; 
+	font-family: Lucida Handwriting;
+	font-size: 75px;
+	
+}
+sub {color: yellow;
+	text-align: left;
+	font-family: Lucida Handwriting;
+	font-size: 35px;
+}
+h2 {color: Blue;
+	text-align: left;
+	text-shadow: 2px 2px 5px pink;
+	font-family: Lucida Handwriting;
+	font-size: 55px;
+}
+h3 {color: purple;
+	text-align: left;
+	text-shadow: 2px 2px 5px red;
+	font-family: Lucida Handwriting;
+	font-size: 35px;
+}

@@ -1,0 +1,11 @@
+Home page section (heading tag, <p> tag, etc.)
+
+A section with pictures (<img> tags, etc.)
+
+Contact form (<form> tag, <input> tag, etc.)
+
+Footer (<footer> tag, etc.)
+
+A section with a video(s) (<iframe> tag, src attribute, etc.)
+
+A <nav> element that utilizes HTML bookmarks to allow the user to jump to various sections on the page.
