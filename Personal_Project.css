@@ -22,3 +22,33 @@ h3 {color: purple;
 	font-family: Lucida Handwriting;
 	font-size: 35px;
 }
+h4 {color: green;
+	text-align: left;
+	text-shadow: 2px 2px 5px red;
+	font-family: Lucida Handwriting;
+	font-size: 25px;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+#Contact { 
+  background-color: #FFD700;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+#gallery {
+background-color: #FFDAB9;
+padding: 10px;
+}
+#home {
+background-color: #40E0D0;
+padding: 10px;
+}
+nav {
+background-color: #40E0D0;
+padding: 10px;
+}
