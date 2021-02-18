@@ -4,7 +4,8 @@
 		<title>Roller's 5&#169;</title>
 		<meta charset="utf-8">
 	</head>
-	<link rel= "stylesheet" type= "text/css" href= "one_page_website.css">
+	<link rel= "stylesheet" type= "text/css" href= "CSS/one_page_website.css">
+	<script src="JS/One_Page_Website.js" defer></script>
 	<section id="home">
 		<h1>Roller's 
 			<sub>You've come to the right place if you like toy cars</sub>
@@ -24,7 +25,7 @@
 		
 		<!--spacer-->
 		<div class="page-spacer">
-			<img src="./Front_ends_resize.jpeg" alt="front ends">
+			<img src="Images/Front_ends_resize.jpeg" alt="front ends">
 		</div>
 		<!--end spacer-->
 		
@@ -42,7 +43,7 @@
 									<div class="photo">
 										<h3>The Beatnik Bandit</h3>
 											<p>This incredibly rare car can be worth thousands!</p>
-												<img src="./beatnik-bandit.jpg" alt="Beatnik Bandit">
+												<img src="Images/beatnik-bandit.jpg" alt="Beatnik Bandit" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 									</div>
 								</div>
 						
@@ -53,7 +54,7 @@
 									<div class="photo">
 										<h3>Oldsmobile</h3>
 											<p>The dark interrior makes this a one of a kind</p>
-												<img src="./olds-442-dark-interior.jpg" alt="Car Group 1">
+												<img src="Images/olds-442-dark-interior.jpg" alt="Car Group 1" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 									</div>
 								</div>
 							<!--END PHOTO-CONTAINER 2-->
@@ -63,14 +64,45 @@
 									<div class="photo">
 										<h3>Green Open Fire</h3>
 											<p>The original 6 wheeled roadster</p>
-												<img src="./green-open-fire.jpg" alt="Open Fire">
+												<img src="Images/green-open-fire.jpg" alt="Open Fire" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 									</div>
 								</div>
 								<!--END PHOTO-CONTAINER 3-->
 						</div>
+			</div>
+		</section>
+		<!-- Modal Light Box -->	
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span> <!-- This is the "X" to close at top right-->
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					<img src="Images/beatnik-bandit.jpg" style="width: 100%;">
 				</div>
-			</section>	
-					
+				<div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="Images/olds-442-dark-interior.jpg" style="width: 100%;">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="Images/green-open-fire.jpg" style="width: 100%;">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="Images/beatnik-bandit_1.jpg" style="width: 100%" onclick="currentSlide(1)" alt="beatnik-bandit">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="Images/olds-442-dark-interior.jpg" style="width: 100%" onclick="currentSlide(2)" alt="olds-442-dark-interior">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="Images/green-open-fire.jpg" style="width: 100%" onclick="currentSlide(3)" alt="green-open-fire">
+				</div>
+			</div>
+		</div>			
 		<!--Contact-->
 		<section id="Contact">
 			<div class="container">
